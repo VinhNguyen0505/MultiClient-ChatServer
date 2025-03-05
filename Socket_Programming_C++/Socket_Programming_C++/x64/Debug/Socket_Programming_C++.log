@@ -1,0 +1,6 @@
+﻿  Server.cpp
+C:\Users\vinhn\OneDrive\Máy tính\SocketProgramming\Socket_Programming_C++\Socket_Programming_C++\Server.cpp(44,60): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\vinhn\OneDrive\Máy tính\SocketProgramming\Socket_Programming_C++\Socket_Programming_C++\Server.cpp(61,23): warning C4244: '=': conversion from 'SOCKET' to 'int', possible loss of data
+C:\Users\vinhn\OneDrive\Máy tính\SocketProgramming\Socket_Programming_C++\Socket_Programming_C++\Server.cpp(94,31): warning C4244: '=': conversion from 'SOCKET' to 'int', possible loss of data
+  LINK : C:\Users\vinhn\OneDrive\Máy tính\SocketProgramming\Socket_Programming_C++\x64\Debug\Socket_Programming_C++.exe not found or not built by the last incremental link; performing full link
+  Socket_Programming_C++.vcxproj -> C:\Users\vinhn\OneDrive\Máy tính\SocketProgramming\Socket_Programming_C++\x64\Debug\Socket_Programming_C++.exe
