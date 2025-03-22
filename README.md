@@ -1,31 +1,46 @@
-# MultiClient-ChatServer Project
-A Simple movie database using SQL and Python for managing actors, directors, and reviews.
+# MultiClient Chat Server
+A real-time chat application built using C++ sockets that allows multiple clients to connect and communicate through a TCP server.
 
 # Features:
-- Import and analyze **CSV files**
-- Store and manage **movies, actors, and reviews** in a database
-- Query and update data using **Python script**
-- Display **movies and their actors** as a pair
+- Accept multiple client connections using multithreading
+- Real-time message broadcasting to all connected clients
+- Clean and simple client-server architecture
+- Includes both **server and client** code
 
 # Technologies Used:
-- Python
-- SQLite
-- CSV
+- C++
+- Sockets (Windows API / POSIX)
+- Multi-threading
 
-# How to run the project
-1. Clone this repository:
-   
+# How to Run the Project
+
+1. Clone the repository:
+
    ```bash
-   git clone https://github.com/VinhNguyen0505/movie_database.git
-   cd movie_database
-   
-3. Ensure SQLite and Python is installed.
-4. Run the following in Command Prompt:
-   
+   git clone https://github.com/VinhNguyen0505/multiclient_chat_server.git
+   cd multiclient_chat_server
+   ```
+
+2. Compile the server and client code (Windows example with `g++`):
+
+   **Server:**
    ```bash
-   python import_movie_actors.py
-   
-6. Query the database using:
-   
-   ```sql
-   SELECT * FROM MovieActors;
+   g++ server.cpp -o server -lws2_32
+   ```
+
+   **Client:**
+   ```bash
+   g++ client.cpp -o client -lws2_32
+   ```
+
+3. Start the server:
+
+   ```bash
+   ./server
+   ```
+
+4. Start one or more clients in separate terminals:
+
+   ```bash
+   ./client
+   ```
